@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.zoiper.Zoiper</id>
+  <name>Keepersecurity Vault</name>
+  <project_license>LicenseRef-proprietary=https://www.keepersecurity.com/termsofuse.html?t=v</project_license>
+  <metadata_license>NONE</metadata_license>
+  <summary>Keepersecurity Vault</summary>
+  <developer_name>Keeper Security, Inc.</developer_name>
+  <description>
+    <p>
+      Keepersecurity Vault
+    </p>
+  </description>
+
+  <launchable type="desktop-id">com.zoiper.Zoiper.desktop</launchable>
+
+  <url type="homepage">https://www.keepersecurity.com/</url>
+  <url type="help">https://www.keepersecurity.com/support.html</url>
+
+  <provides>
+    <binary>keepersecurity</binary>
+  </provides>
+
+  <releases>
+    <release version="15.0.11" date="2020-11-12">
+      <description>
+        <p>release-15.0.11</p>
+      </description>
+    </release>
+  </releases>
+
+  <content_rating type="oars-1.1" />
+</component>

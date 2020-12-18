@@ -1,0 +1,54 @@
+{
+  "id": "com.zoiper.Zoiper",
+  "command": "/app/opt/Zoiper5/zoiper",
+  "separate-locales": false,
+  "runtime": "org.freedesktop.Platform",
+  "runtime-version": "20.08",
+  "sdk": "org.freedesktop.Sdk",
+  "finish-args": [
+    "--device=all",
+    "--filesystem=home",
+    "--share=ipc",
+    "--share=network",
+    "--socket=pulseaudio",
+    "--socket=x11",
+    "--talk-name=org.freedesktop.Notifications",
+    "--talk-name=org.gtk.Notifications",
+    "--talk-name=org.kde.StatusNotifierWatcher"
+  ],
+  "modules": [
+    {
+      "name": "zoiper",
+      "sources": [
+        {
+          "type": "file",
+          "path": "zoiper5_5.4.10_x86_64.tar.xz"
+        },
+        {
+          "type": "file",
+          "path": "com.zoiper.Zoiper.desktop"
+        },
+        {
+          "type": "file",
+          "path": "com.zoiper.Zoiper.png"
+        },
+        {
+          "type": "file",
+          "path": "com.zoiper.Zoiper.metainfo.xml"
+        }
+      ],
+      "buildsystem": "simple",
+      "build-commands": [
+        "tar -xf zoiper5_5.4.10_x86_64.tar.xz",
+        "rm zoiper5_5.4.10_x86_64.tar.xz",
+        "mkdir /app/opt",
+        "mv Zoiper5 /app/opt/Zoiper5"
+      ],
+      "post-install": [
+        "install -Dm644 com.zoiper.Zoiper.desktop /app/share/applications/com.zoiper.Zoiper.desktop",
+        "install -Dm644 com.zoiper.Zoiper.png /app/share/icons/com.zoiper.Zoiper.png",
+        "install -Dm644 com.zoiper.Zoiper.metainfo.xml /app/share/metainfo/com.zoiper.Zoiper.metainfo.xml"
+      ]
+    }
+  ]
+}
