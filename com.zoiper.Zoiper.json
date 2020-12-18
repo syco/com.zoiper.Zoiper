@@ -1,0 +1,81 @@
+{
+  "id": "com.zoiper.Zoiper",
+  "command": "/app/opt/Zoiper5/zoiper",
+  "separate-locales": false,
+  "sdk": "org.gnome.Sdk",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "41",
+  "finish-args": [
+    "--device=all",
+    "--filesystem=home",
+    "--share=ipc",
+    "--share=network",
+    "--socket=pulseaudio",
+    "--socket=x11",
+    "--talk-name=org.freedesktop.Notifications",
+    "--talk-name=org.gtk.Notifications",
+    "--talk-name=org.kde.StatusNotifierWatcher"
+  ],
+  "modules": [
+    "shared-modules/gtk2/gtk2.json",
+    {
+      "name": "v4l-utils",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://linuxtv.org/downloads/v4l-utils/v4l-utils-1.22.1.tar.bz2",
+          "sha256": "65c6fbe830a44ca105c443b027182c1b2c9053a91d1e72ad849dfab388b94e31"
+        }
+      ],
+      "config-opts": [
+        "--disable-doxygen-doc",
+        "--disable-libdvbv5",
+        "--disable-qv4l2",
+        "--disable-static",
+        "--disable-v4l-utils",
+        "--with-udevdir=/app/lib/udev"
+      ]
+    },
+    {
+      "name": "zoiper",
+      "sources": [
+        {
+          "type": "file",
+          "url": "https://aur.archlinux.org/cgit/aur.git/plain/zoipdl.sh?h=zoiper",
+          "sha256": "68627904f73617d145a91439f267f5c43d95f9dac10a3d4a8069b5460ddb3c8c",
+          "dest-filename": "zoipdl.sh"
+        },
+        {
+          "type": "file",
+          "path": "com.zoiper.Zoiper.desktop"
+        },
+        {
+          "type": "file",
+          "path": "com.zoiper.Zoiper.png"
+        },
+        {
+          "type": "file",
+          "path": "com.zoiper.Zoiper.metainfo.xml"
+        }
+      ],
+      "buildsystem": "simple",
+      "build-options": {
+        "build-args": [
+          "--share=network"
+        ]
+      },
+      "build-commands": [
+        "bash zoipdl.sh",
+        "tar -xf Zoiper5_5.5.13_x86_64.tar.xz",
+        "rm Zoiper5_5.5.13_x86_64.tar.xz",
+        "mkdir /app/opt",
+        "mv Zoiper5 /app/opt/Zoiper5"
+      ],
+      "post-install": [
+        "install -Dm644 com.zoiper.Zoiper.desktop /app/share/applications/com.zoiper.Zoiper.desktop",
+        "install -Dm644 com.zoiper.Zoiper.png /app/share/icons/com.zoiper.Zoiper.png",
+        "install -Dm644 com.zoiper.Zoiper.metainfo.xml /app/share/metainfo/com.zoiper.Zoiper.metainfo.xml"
+      ]
+    }
+  ]
+}

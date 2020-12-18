@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Zoiper
+Comment=Zoiper
+GenericName=Zoiper
+Exec=/app/opt/Zoiper5/zoiper
+Icon=com.zoiper.Zoiper
+Type=Application
+StartupNotify=true
+Terminal=false
+Categories=Utility;
+StartupWMClass=zoiper

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.zoiper.Zoiper</id>
+  <name>Zoiper</name>
+  <project_license>LicenseRef-proprietary=https://www.zoiper.com/en/zoiper-general-terms</project_license>
+  <metadata_license>NONE</metadata_license>
+  <summary>Zoiper</summary>
+  <developer_name>Zoiper.com</developer_name>
+  <description>
+    <p>
+      Zoiper
+    </p>
+  </description>
+
+  <launchable type="desktop-id">com.zoiper.Zoiper.desktop</launchable>
+
+  <url type="homepage">https://www.zoiper.com/</url>
+  <url type="help">https://www.zoiper.com/en/support/home</url>
+
+  <provides>
+    <binary>Zoiper5</binary>
+  </provides>
+
+  <content_rating type="oars-1.1" />
+</component>
