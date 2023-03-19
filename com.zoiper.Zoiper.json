@@ -23,8 +23,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://linuxtv.org/downloads/v4l-utils/v4l-utils-1.22.1.tar.bz2",
-          "sha256": "65c6fbe830a44ca105c443b027182c1b2c9053a91d1e72ad849dfab388b94e31"
+          "url": "https://linuxtv.org/downloads/v4l-utils/v4l-utils-1.24.1.tar.bz2",
+          "sha256": "cbb7fe8a6307f5ce533a05cded70bb93c3ba06395ab9b6d007eb53b75d805f5b"
         }
       ],
       "config-opts": [
@@ -66,8 +66,8 @@
       },
       "build-commands": [
         "bash zoipdl.sh",
-        "tar -xf Zoiper5_5.5.14_x86_64.tar.xz",
-        "rm Zoiper5_5.5.14_x86_64.tar.xz",
+        "tar -xf Zoiper5_5.5.15_x86_64.tar.xz",
+        "rm Zoiper5_5.5.15_x86_64.tar.xz",
         "mkdir /app/opt",
         "mv Zoiper5 /app/opt/Zoiper5"
       ],
