@@ -21,5 +21,17 @@
     <binary>Zoiper5</binary>
   </provides>
 
-  <content_rating type="oars-1.1" />
+  <releases>
+    <release version="5.5.15" date="2023-03-19" />
+    <release version="5.5.14" date="2022-11-25" />
+    <release version="5.5.13" date="2020-12-18" />
+  </releases>
+
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-chat">intense</content_attribute>
+    <content_attribute id="social-info">moderate</content_attribute>
+    <content_attribute id="social-audio">intense</content_attribute>
+    <content_attribute id="social-contacts">intense</content_attribute>
+    <content_attribute id="money-purchasing">moderate</content_attribute>
+  </content_rating>
 </component>
