@@ -55,7 +55,7 @@
         },
         {
           "type": "file",
-          "path": "com.zoiper.Zoiper.metainfo.xml"
+          "path": "com.zoiper.Zoiper.appdata.xml"
         }
       ],
       "buildsystem": "simple",
@@ -72,9 +72,9 @@
         "mv Zoiper5 /app/opt/Zoiper5"
       ],
       "post-install": [
-        "install -Dm644 com.zoiper.Zoiper.desktop /app/share/applications/com.zoiper.Zoiper.desktop",
-        "install -Dm644 com.zoiper.Zoiper.png /app/share/icons/com.zoiper.Zoiper.png",
-        "install -Dm644 com.zoiper.Zoiper.metainfo.xml /app/share/metainfo/com.zoiper.Zoiper.metainfo.xml"
+        "install -Dm644 ${FLATPAK_ID}.appdata.xml /app/share/appdata/${FLATPAK_ID}.appdata.xml",
+        "install -Dm644 ${FLATPAK_ID}.desktop /app/share/applications/${FLATPAK_ID}.desktop",
+        "install -Dm644 ${FLATPAK_ID}.png /app/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png"
       ]
     }
   ]
