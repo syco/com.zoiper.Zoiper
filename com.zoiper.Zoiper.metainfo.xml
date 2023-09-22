@@ -14,6 +14,12 @@
 
   <launchable type="desktop-id">com.zoiper.Zoiper.desktop</launchable>
 
+  <screenshots>
+    <screenshot type="default">
+      <image>https://www.zoiper.com/v3/img/screenshots/zoiper5/ZHF03.png</image>
+    </screenshot>
+  </screenshots>
+
   <url type="homepage">https://www.zoiper.com/</url>
   <url type="help">https://www.zoiper.com/en/support/home</url>
 
