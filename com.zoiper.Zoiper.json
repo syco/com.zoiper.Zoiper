@@ -66,8 +66,8 @@
       },
       "build-commands": [
         "bash zoipdl.sh",
-        "tar -xf Zoiper5_5.6.3_x86_64.tar.xz",
-        "rm Zoiper5_5.6.3_x86_64.tar.xz",
+        "tar -xf Zoiper5_5.6.4_x86_64.tar.xz",
+        "rm Zoiper5_5.6.4_x86_64.tar.xz",
         "mkdir /app/opt",
         "mv Zoiper5 /app/opt/Zoiper5"
       ],
