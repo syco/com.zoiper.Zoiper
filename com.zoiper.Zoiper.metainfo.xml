@@ -3,9 +3,11 @@
   <id>com.zoiper.Zoiper</id>
   <name>Zoiper</name>
   <project_license>LicenseRef-proprietary=https://www.zoiper.com/en/zoiper-general-terms</project_license>
-  <metadata_license>MIT</metadata_license>
+  <metadata_license>CC0-1.0</metadata_license>
   <summary>Zoiper</summary>
-  <developer_name>Zoiper.com</developer_name>
+  <developer>
+    <name>Zoiper.com</name>
+  </developer>
   <description>
     <p>
       Zoiper
@@ -37,11 +39,5 @@
     <release version="5.5.13" date="2020-12-18" />
   </releases>
 
-  <content_rating type="oars-1.1">
-    <content_attribute id="social-chat">intense</content_attribute>
-    <content_attribute id="social-info">moderate</content_attribute>
-    <content_attribute id="social-audio">intense</content_attribute>
-    <content_attribute id="social-contacts">intense</content_attribute>
-    <content_attribute id="money-purchasing">moderate</content_attribute>
-  </content_rating>
+  <content_rating type="oars-1.1" />
 </component>
