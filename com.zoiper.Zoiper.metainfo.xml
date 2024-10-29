@@ -5,7 +5,7 @@
   <project_license>LicenseRef-proprietary=https://www.zoiper.com/en/zoiper-general-terms</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <summary>Zoiper</summary>
-  <developer>
+  <developer id="com.zoiper">
     <name>Zoiper.com</name>
   </developer>
   <description>
@@ -30,6 +30,7 @@
   </provides>
 
   <releases>
+    <release version="5.6.5" date="2024-10-29" />
     <release version="5.6.4" date="2024-02-26" />
     <release version="5.6.3" date="2024-02-15" />
     <release version="5.6.2" date="2024-01-23" />
