@@ -4,7 +4,7 @@
   "separate-locales": false,
   "sdk": "org.gnome.Sdk",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "46",
+  "runtime-version": "48",
   "finish-args": [
     "--device=all",
     "--filesystem=home",
